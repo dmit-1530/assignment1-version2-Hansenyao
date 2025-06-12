@@ -15,3 +15,11 @@ header, footer {
     color: #fff;
     padding: 2rem 4rem;   
 }
+
+.home-page h1 {
+  color: blue;
+}
+
+.gallery-page h1 {
+  color: red;
+}
