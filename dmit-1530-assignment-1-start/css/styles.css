@@ -258,18 +258,23 @@ img {
 }
 
 .gallery-page .art-gallery {
-    display: flex;
-    flex-direction: column;
     gap: 3.75rem;
     padding: 4rem 2rem;
     background-color: var(--blue-grey-50);
 }
 .gallery-page .art-gallery h2 {
     text-align: center;
+    margin-bottom: 3rem;
 }
 .gallery-page .art-gallery h3 {
-    margin-top: 3.75rem;
     margin-bottom: 2rem;
+}
+.gallery-page .art-gallery > .flex-container {
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+.gallery-page .art-gallery > .flex-container > *{
+    width: 100%;
 }
 
 .gallery-page .block-quotation {
@@ -287,8 +292,8 @@ img {
 .gallery-page .hub-area h2 {
     margin-bottom: 2rem;
 }
-.gallery-page .hub-area .hub-area-content {
-    flex-direction: column;
+.gallery-page .hub-area > .flex-container {
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -300,24 +305,24 @@ img {
 .gallery-page .features-hights h2 {
     margin-bottom: 2rem;
 }
-.gallery-page .features-hights .features-hights-content {
-    flex-direction: column;
+.gallery-page .features-hights > .flex-container {
+    flex-wrap: wrap;
+    gap: 3rem;
 }
-.gallery-page .features-hights ul {
-    margin-top: 3rem;
+.gallery-page .features-hights > .flex-container > *{
+    width: 100%;
 }
 .gallery-page .features-hights li {
     margin-bottom: 1rem;
 }
-.gallery-page .features-hights img {
-    margin-top: 1rem;
-}
 .gallery-page .features-hights p {
     color: #EDEDED;
+    margin-top: 1rem;
 }
 
 /* media query for screens fo 768px of larger */
 @media screen and (min-width:768px) {
+    /* Styles for home page */
     .home-page .creating-spaces > section:not(:first-child)  {
         width: calc((100% - 1.5rem) / 2);
     }
@@ -343,4 +348,27 @@ img {
     .home-page .subscribe-area {
         padding: 4rem 20%;
     }
+
+    /* Styles for gallery page */
+    .gallery-page .art-gallery > .flex-container > * {
+        width: calc((100% - 2.5rem) / 2);
+    }
+    .gallery-page .art-gallery > .flex-container > :nth-child(3)  {
+        order: 2;
+    }
+
+    .gallery-page .hub-area h2 {
+        text-align: center;
+    }
+    .gallery-page .hub-area > .flex-container > * {
+        width: calc((100% - 2.5rem) / 2);
+    }
+
+    .gallery-page .features-hights > .flex-container{
+        gap: 1.5rem;
+    }
+    .gallery-page .features-hights > .flex-container > *{
+        width: calc((100% - 1.5rem) / 2);
+    }
+
 }
