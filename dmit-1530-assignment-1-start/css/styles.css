@@ -120,6 +120,8 @@ button:hover {
 }
 
 img {
+    width: 100%;
+    height: auto;
     border-radius: 0.5rem;
 }
 
@@ -176,9 +178,8 @@ img {
     margin-bottom: 4rem;
 }
 .home-page .creating-spaces .creating-spaces-content {
-    flex-direction: column;
-    width: 100%;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .home-page .block-quotation {
@@ -202,34 +203,36 @@ img {
 }
 
 .home-page .designed-area {
-    padding: 4rem 2rem 4rem 2rem;
-    background-color: var(--blue-grey-50);
+    padding: 4rem 2rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+    background-color: var(--blue-grey-100);
 }
 .home-page .designed-area h2 {
     margin-bottom: 1.5rem;
 }
-.home-page .designed-area .designed-area-content{
-    flex-direction: column;
-    width: 100%;
-    gap: 3rem;
-    margin-top: 3rem;
+.home-page .designed-area p {
+    font-family: var(--font-family-p2);
 }
-.home-page .designed-area .designed-area-content section {
+.home-page .designed-area div {
     text-align: left;
 }
-.home-page .designed-area .designed-area-content h3 {
+.home-page .designed-area h3 {
     margin-bottom: 1rem;
 }
-.home-page .designed-area .designed-area-content ul {
+.home-page .designed-area ul {
     margin-left: 1.75rem;
-    margin-bottom: 3rem;
 }
-.home-page .designed-area .designed-area-content li {
-    margin-bottom: 1rem;
+.home-page .designed-area li {
     font-family: var(--font-family-p);
+    margin-top: 1rem;
 }
-.home-page .designed-area .designed-area-content p {
-    font-family: var(--font-family-p2);
+.home-page .designed-area .flex-container{
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.home-page .designed-area .flex-container > *{
+    width: 100%;
 }
 
 .home-page .subscribe-area {
@@ -315,19 +318,29 @@ img {
     color: #EDEDED;
 }
 
+/* media query for screens fo 768px of larger */
+@media screen and (min-width:768px) {
+    .home-page .creating-spaces .creating-spaces-content section {
+        width: calc((100% - 1.5rem) / 2);
+    }
+    .home-page .creating-spaces .creating-spaces-content .asterisk, 
+    .home-page .creating-spaces .creating-spaces-content h3,
+    .home-page .creating-spaces .creating-spaces-content p {
+        text-align: left;
+    }
 
+    .home-page .designed-area .flex-container > * {
+        width: calc((100% - 3rem) / 2);
+    }
+    .home-page .designed-area .flex-container div {
+        display: flex;
+        align-items: center;
+    }
+    .home-page .designed-area :nth-of-type(2) div {
+        order: -1;
+    }
 
-/*
-footer div {
-    justify-content: center;
-    align-items: center;
-}*/
-
-/*
-.home-page h1 {
-  color: blue;
-}
-
-.gallery-page h1 {
-  color: red;
+    .home-page .subscribe-area {
+        padding: 4rem 20%;
+    }
 }
