@@ -2,6 +2,8 @@
     --blue-grey-50: #ECEFF1;
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
+    --blue-grey-400: #78909C;
+    --blue-grey-800: #37474F;
     --blue-grey-900: #263238;
     --header-footer-bk-color: #111111;
     /* font-family variables*/
@@ -118,7 +120,6 @@ img {
     border-radius: 0.5rem;
 }
 
-
 .footer-logo {
     text-align: left;
 }
@@ -143,102 +144,164 @@ img {
     font-family: var(--font-family-span);
 }
 
-.hello-area {
+/* styles for home page */
+.home-page .hello-area {
     padding: 4rem 2rem;
     background-color: var(--blue-grey-50);
 }
-.hello-area h2 {
+.home-page .hello-area h2 {
     margin-bottom: 1rem;
 }
-.hello-area p {
+.home-page .hello-area p {
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 2.25rem;
 }
-.hello-area button {
+.home-page .hello-area button {
     margin-bottom: 3rem;
 }
 
-.creating-spaces {
+.home-page .creating-spaces {
     padding: 4rem 2rem;
 }
-.creating-spaces h2 {
+.home-page .creating-spaces h2 {
     margin-bottom: 2rem;
 }
-.creating-spaces h3 {
+.home-page .creating-spaces h3 {
     margin-bottom: 1rem;
 }
-.creating-spaces section:first-of-type {
+.home-page .creating-spaces section:first-of-type {
     margin-bottom: 4rem;
 }
-.creating-spaces section {
+.home-page .creating-spaces section {
     margin-bottom: 2rem;
 }
 
-.block-quotation {
-    background-color: #78909C;
+.home-page .block-quotation {
+    background-color: var(--blue-grey-400);
     padding: 4rem 2rem;
 }
-.block-quotation h2 {
+.home-page .block-quotation h2 {
     color: white;
     margin-bottom: 3rem;
 }
-.block-quotation p:first-child {
+.home-page .block-quotation p:first-child {
     color: white;
     margin-bottom: 1rem;
 }
-.block-quotation p:first-of-type {
+.home-page .block-quotation p:first-of-type {
     color: white;
     margin-bottom: 1rem;
 }
-.block-quotation p:nth-of-type(2) {
+.home-page .block-quotation p:nth-of-type(2) {
     color: var(--blue-grey-50);
 }
 
-.designed-area {
+.home-page .designed-area {
     padding: 1rem 2rem 4rem 2rem;
-    background-color: #CFD8DC;
+    background-color: var(--blue-grey-50);
 }
-.designed-area h2 {
+.home-page .designed-area h2 {
     margin-bottom: 1.5rem;
 }
-.designed-area section {
+.home-page .designed-area section {
     margin-top: 3rem;
     text-align: left;
 }
-.designed-area h3 {
+.home-page .designed-area h3 {
     margin-bottom: 1rem;
 }
-.designed-area ul {
+.home-page .designed-area ul {
     margin-left: 1.75rem;
     margin-bottom: 3rem;
 }
-.designed-area li {
+.home-page .designed-area li {
     margin-bottom: 1rem;
     font-family: var(--font-family-p);
 }
-.designed-area p {
+.home-page .designed-area p {
     font-family: Arial, Helvetica, sans-serif;
 }
-.designed-area section:first-of-type {
+.home-page .designed-area section:first-of-type {
     margin-bottom: 3rem;
     text-align: center;
 }
 
-.subscribe-area {
+.home-page .subscribe-area {
     background-color: var(--blue-grey-900);
     padding: 4rem 2rem;
 }
-.subscribe-area section {
+.home-page .subscribe-area section {
     background-color: white;
     border-radius: 8px;
     padding: 4rem 1.5rem;
 }
-.subscribe-area section h2 {
+.home-page .subscribe-area section h2 {
     margin-bottom: 1rem;
 }
-.subscribe-area section p {
+.home-page .subscribe-area section p {
     margin-bottom: 2rem;
 }
+
+/* Styles for gallery page */
+.gallery-page h2, h3, p, li {
+    text-align: left;
+}
+
+.gallery-page .art-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+    padding: 4rem 2rem;
+    background-color: var(--blue-grey-50);
+}
+.gallery-page .art-gallery h2 {
+    text-align: center;
+}
+.gallery-page .art-gallery h3 {
+    margin-top: 3.75rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-page .block-quotation {
+    padding: 4rem 2rem;
+}
+.gallery-page .block-quotation h2 {
+    text-align: center;
+}
+
+.gallery-page .hub-area {
+    padding: 4rem 2rem;
+    color: white;
+    background-color: var(--blue-grey-400);
+}
+.gallery-page .hub-area h2 {
+    margin-bottom: 2rem;
+}
+.gallery-page .hub-area p {
+    margin-top: 1rem;
+}
+
+.gallery-page .features-hights {
+    color: white;
+    padding: 4rem 2rem;
+    background-color: var(--blue-grey-800);
+}
+.gallery-page .features-hights h2 {
+    margin-bottom: 2rem;
+}
+.gallery-page .features-hights ul {
+    margin-top: 3rem;
+}
+.gallery-page .features-hights li {
+    margin-bottom: 1rem;
+}
+.gallery-page .features-hights img {
+    margin-top: 1rem;
+}
+.gallery-page .features-hights p {
+    color: #EDEDED;
+}
+
 
 
 
