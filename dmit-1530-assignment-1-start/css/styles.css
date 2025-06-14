@@ -286,8 +286,9 @@ img {
 .gallery-page .hub-area h2 {
     margin-bottom: 2rem;
 }
-.gallery-page .hub-area p {
-    margin-top: 1rem;
+.gallery-page .hub-area .hub-area-content {
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .gallery-page .features-hights {
@@ -297,6 +298,9 @@ img {
 }
 .gallery-page .features-hights h2 {
     margin-bottom: 2rem;
+}
+.gallery-page .features-hights .features-hights-content {
+    flex-direction: column;
 }
 .gallery-page .features-hights ul {
     margin-top: 3rem;
