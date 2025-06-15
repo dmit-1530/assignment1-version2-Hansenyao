@@ -48,15 +48,14 @@ body {
 header, footer {
     background-color: var(--header-footer-bk-color);
     color: #fff;
-    padding: 4rem 2rem;   
-    /**/
-    display: flex;
-    flex-direction: column;
+    padding: 4rem 2rem;  
 }
 
 header {
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 header .menu-links {
@@ -97,6 +96,8 @@ span {
 }
 
 footer {
+    display: flex;
+    flex-wrap: wrap;
     gap: 2.5rem;
 }
 
@@ -126,18 +127,17 @@ img {
 }
 
 .footer-logo {
+    width: 100%;
     text-align: left;
 }
 
 .footer-links {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 2rem;
+    width: 100%;
+    gap: 10%;
     justify-content: center;
 }
 
 .footer-links-menu {
-    width: ((100%-2*2rem) / 3);
     display: flex;
     gap: 1rem;
     flex-direction: column;
@@ -322,6 +322,14 @@ img {
 
 /* media query for screens fo 768px of larger */
 @media screen and (min-width:768px) {
+    /* Styles for footer*/
+    .footer-logo {
+        width: calc((100% - 2.5rem) / 2);
+    }
+    .footer-links {
+        width: calc((100% - 2.5rem) / 2);
+    }
+
     /* Styles for home page */
     .home-page .creating-spaces > section:not(:first-child)  {
         width: calc((100% - 1.5rem) / 2);
