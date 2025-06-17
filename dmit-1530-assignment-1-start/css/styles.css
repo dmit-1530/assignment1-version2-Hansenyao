@@ -121,16 +121,17 @@ footer p {
     max-width: 42.25rem;
 }
 
-button {
+.btn {
     color: #ECEFF1;
     background-color: #111111;
+    font-family: var(--font-family-p2);
+    display: inline-block;
+    padding: 1rem 1.5rem;
     border: 0;
     border-radius: 6px;
-    width: 103px;
-    height: 56px;
 }
 
-button:hover {
+.btn:hover {
     background-color: #028568;
 }
 
@@ -180,7 +181,7 @@ img {
     font-family: var(--font-family-p2);
     margin-bottom: 2.25rem;
 }
-.home-page .hello-area > .inner-container button {
+.home-page .hello-area > .inner-container > .btn {
     margin-bottom: 3rem;
 }
 
