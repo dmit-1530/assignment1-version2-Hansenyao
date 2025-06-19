@@ -423,6 +423,10 @@ img {
 
 /* media query for screens fo 1440px of larger */
 @media screen and (min-width:1440px) {
+    .hello-area img {
+        max-width: 90rem;
+    }
+
     /* Styles for home page */
     .home-page .creating-spaces > .inner-container > section:not(:first-child)  {
         width: calc((100% - 2*2rem) / 3);
